@@ -1,0 +1,29 @@
+<div class="content-wrapper">
+    <section class="panel panel-lg">
+        {{> app-link url='/main/profile/profile.html' link-text='Назад к профайл' }}
+        <div class="profile-content">
+            <div class="avatar-container">
+                <div class="profile-avatar"></div>
+            </div>
+            <div class="app-form">
+                <form action="#" method="post" class="edit-profile-form">
+                    <div>
+                        {{> app-input name="email" labeltext='Почта' type='text' }}
+                        {{> app-input name="login" labeltext='Логин' type='text' }}
+                        {{> app-input name="first_name" labeltext='Имя' type='text' }}
+                        {{> app-input name="second_name" labeltext='Фамилия' type='text' }}
+                    </div>
+                    <div>
+                        {{> app-input name="display_name" labeltext='Логин' type='text' }}
+                        {{> app-input name="phone" labeltext='Телефон' type='text' }}
+                        {{> app-input name="password" labeltext='Пароль' type='password' }}
+                        {{> app-input name="repeatPassword" labeltext='Пароль (ещё раз)' type='password' }}
+                    </div>
+                </form>
+                <div class="actions">
+                    {{> app-button text='Сохранить' }}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

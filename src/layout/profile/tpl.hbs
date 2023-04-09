@@ -1,0 +1,43 @@
+<div class="content-wrapper">
+    <section class="panel panel-lg">
+        {{> app-link url='/index.html' link-text='На главную' }}
+        <div class="profile-content">
+            <div class="avatar-container">
+                <div class="profile-avatar"></div>
+                <h1>Роман</h1>
+            </div>
+            <ul>
+                <li>
+                    <p>Почта</p>
+                    <p>myemail@email.com</p>
+                </li>
+                <li>
+                    <p>Логин</p>
+                    <p>sweetheart223</p>
+                </li>
+                <li>
+                    <p>Имя</p>
+                    <p>Роман</p>
+                </li>
+                <li>
+                    <p>Фамилия</p>
+                    <p>Петрович</p>
+                </li>
+                <li>
+                    <p>Имя в чате</p>
+                    <p>Рома</p>
+                </li>
+                <li>
+                    <p>Телефон</p>
+                    <p>+7 (909) 967 30 30</p>
+                </li>
+            </ul>
+
+            <div class="actions">
+                {{> app-link url='/main/edit-profile/edit-profile.html' link-text='Изменить данные' }}
+                {{> app-link url='/main/change-password/change-password.html' link-text='Изменить пароль' }}
+                {{> app-link url='/main/login/login.html' link-text='Выйти' }}
+            </div>
+        </div>
+    </section>
+</div>

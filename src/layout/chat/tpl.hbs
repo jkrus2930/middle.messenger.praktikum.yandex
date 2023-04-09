@@ -1,0 +1,41 @@
+<div class="chat-left-side">
+    <div class="side-panel">
+        <div class="panel-header">
+            {{> app-link url='/index.html' link-text='На главную' }}
+            {{> app-link url='/main/profile/profile.html' link-text='Профиль' }}
+        </div>
+        <div class="search-box">
+            {{> app-input-search name="search" placeholder="Поиск" }}
+        </div>
+        <div class="chat-message-list">
+            <p> Список чатов</p>
+        </div>
+    </div>
+</div>
+
+<div class="chat-content">
+    <div class="chat-wrapper">
+        <div>
+            <div class="chat-header">
+                <div class="chat-user">
+                    <div class="chat-avatar"></div>
+                    <h2>User Name</h2>
+                </div>
+                <div class="header-actions">
+                    <i class="icon icon__attach"></i>
+                    <i class="icon icon__camera"></i>
+                    <i class="icon icon__menu-more"></i>
+                </div>
+            </div>
+            <div class="chat-conversation">
+                Выберите чат чтобы отправить сообщение
+            </div>
+            <div class="chat-input-section">
+                <i class="icon icon__attach"></i>
+                <i class="icon icon__camera"></i>
+                {{> app-input name="message" type='text' }}
+                {{> app-enter-button }}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+@import "../../styles/variables/index";
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+
+  .input-label {
+    font-weight: $font-weight-medium;
+    font-size: 1rem;
+    line-height: 24px;
+    color: $light-black;
+    margin-bottom: 0.2rem;
+    display: flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+
+  .input-error {
+    font-size: 0.9rem;
+    font-weight: $font-weight-medium;
+    margin-left: 1rem;
+    color: $error-color;
+    display: none;
+  }
+}

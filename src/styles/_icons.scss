@@ -1,0 +1,32 @@
+@mixin icon($icon_name) {
+  background: url("./static/" + $icon_name + ".svg") no-repeat center;
+}
+
+.icon {
+  display: inline-block;
+  min-width: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  cursor: pointer;
+
+  &__search {
+    @include icon("search");
+  }
+
+  &__menu-more {
+    @include icon("menu-more");
+  }
+
+  &__attach {
+    @include icon("attach");
+  }
+
+  &__camera {
+    @include icon("camera");
+  }
+
+  &__arrow-enter {
+    @include icon("arrow-enter");
+  }
+}

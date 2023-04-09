@@ -1,0 +1,18 @@
+<div class="content-wrapper">
+    <section class="panel panel-lg">
+        {{> app-link url='/index.html' link-text='На главную' }}
+        <div class="password-content">
+            <h1>Изменить пароль</h1>
+            <div class="app-form">
+                <form action="#" method="post">
+                    {{> app-input name="password" labeltext='Старый пароль' type='password' }}
+                    {{> app-input name="password" labeltext='Новый пароль' type='password' }}
+                    {{> app-input name="repeatPassword" labeltext='Повторите новый пароль' type='password' }}
+                </form>
+                <div class="actions">
+                    {{> app-button text='Сохранить' }}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

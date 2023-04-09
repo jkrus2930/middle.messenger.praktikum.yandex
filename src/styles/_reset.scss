@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	outline: none;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+select {
+	text-align: left;
+	text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[type="file"] {
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+textarea {
+	overflow-y: auto;
+	overflow-x: hidden;
+	resize: vertical;
+}
+
+:disabled,
+.disabled {
+	cursor: default;
+}
+
+audio,
+video,
+iframe {
+	display: block;
+}
