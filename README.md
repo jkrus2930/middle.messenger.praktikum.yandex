@@ -1,5 +1,5 @@
 
-# Yandex practicum - Chat App 
+# Yandex praktikum - Chat App 
 
 Chat app - Project for sprint 1.
 
@@ -9,7 +9,7 @@ Technologies Used: Parcel, Handlebars, Node + Express, SCSS, Netlify.
 
 ## Demo
 
-Site deployed in netlify
+Site deployed in Netlify
 
 https://deft-semifreddo-a877ad.netlify.app/
 ## Run Locally
