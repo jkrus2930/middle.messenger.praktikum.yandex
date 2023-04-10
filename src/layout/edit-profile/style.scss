@@ -1,0 +1,19 @@
+@import "../../styles/variables/index";
+
+.app-form {
+  margin-top: 2rem;
+
+  .edit-profile-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    > div {
+      flex-grow: 1;
+    }
+  }
+
+  .btn {
+    width: 50%;
+  }
+}

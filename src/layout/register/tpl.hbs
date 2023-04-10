@@ -1,0 +1,21 @@
+<div class="content-wrapper">
+    <section class="panel panel-md">
+        <h1>Регистрация</h1>
+        <div class="app-form">
+            <form action="#" method="post">
+                {{> app-input name="email" labeltext='Почта' type='text' }}
+                {{> app-input name="login" labeltext='Логин' type='text' }}
+                {{> app-input name="first_name" labeltext='Имя' type='text' }}
+                {{> app-input name="second_name" labeltext='Фамилия' type='text' }}
+                {{> app-input name="phone" labeltext='Телефон' type='text' }}
+                {{> app-input name="password" labeltext='Пароль' type='password' }}
+                {{> app-input name="repeatPassword" labeltext='Пароль (ещё раз)' type='password' }}
+                <div class="actions">
+                    {{> app-button text='Зарегистрироваться' }}
+                    {{> app-link url='/main/login/login.html' link-text='Войти' }}
+                    {{> app-link url='/index.html' link-text='На главную' }}
+                </div>
+            </form>
+        </div>
+    </section>
+</div>

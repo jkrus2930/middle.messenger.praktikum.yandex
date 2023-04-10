@@ -1,0 +1,35 @@
+{
+  "name": "chat-app",
+  "version": "0.0.0",
+  "description": "Yandex practicum - Sprint 1 - Chat app",
+  "source": "index.html",
+  "scripts": {
+    "dev": "parcel --no-cache ./src/index.html --open",
+    "build": "parcel build --no-cache ./src/index.html",
+    "start": "parcel build --no-cache ./src/index.html && node ./server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "targets": {
+    "default": {
+      "distDir": "./build",
+      "engines": {
+        "browsers": ">= 50%"
+      }
+    }
+  },
+  "dependencies": {
+    "@parcel/transformer-inline-string": "2.8.3",
+    "@parcel/transformer-sass": "2.8.3",
+    "express": "4.18.2",
+    "handlebars": "4.7.7",
+    "parcel": "2.8.3",
+    "parcel-transformer-hbs": "1.0.4",
+    "sass": "1.61.0"
+  },
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  }
+}

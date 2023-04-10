@@ -1,0 +1,148 @@
+@import "./styles/variables/index";
+@import "./styles/reset";
+@import "./styles/icons";
+
+body, html {
+  font-size: $default-font-size;
+}
+
+body {
+  font-family: $default-font;
+  background-color: $main-bg-color;
+  color: $font-color;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.error-number {
+  font-size: 3rem;
+}
+
+.error-message {
+  font-size: 1.85rem;
+  font-weight: $font-weight-medium;
+}
+
+.app-link {
+  font-size: 1rem;
+  font-weight: 700;
+
+  a {
+    color: $darken-primary-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-color-btn;
+    }
+  }
+}
+
+ul, nav {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-top: 20px;
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: $border-radius;
+  min-height: 450px;
+  padding: 2rem;
+  background-color: $white-color;
+  box-shadow: $panel-shadow;
+
+  .app-link {
+    align-self: start;
+  }
+}
+
+.panel-md {
+  min-width: 360px;
+}
+
+.panel-lg {
+  min-width: 850px;
+}
+
+.app-form {
+  width: 100%;
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+
+    .app-link {
+      align-self: center;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-bottom: 2rem;
+
+  .avatar-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+
+    .profile-avatar {
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      background-image: url('../src/static/noAvatar.svg');
+    }
+  }
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid $primary-color;
+  color: $white-color;
+  background: $primary-color-btn;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  width: 100%;
+  &:hover {
+    background: $darken-primary-color;
+  }
+}
+
+input, textarea {
+  background-color: $white-color;
+  border: 1px solid $main-bg-color;
+  line-height: 16px;
+  border-radius: 6px;
+  padding: 7px 12px;
+  height: 42px;
+}

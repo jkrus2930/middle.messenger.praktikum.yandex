@@ -1,0 +1,16 @@
+<div class="content-wrapper">
+    <section class="panel panel-md">
+        <h1>Вход</h1>
+        <div class="app-form">
+            <form action="#" method="post">
+                {{> app-input name="login" labeltext='Логин' type='text' }}
+                {{> app-input name="password" labeltext='Пароль' type='password' }}
+                <div class="actions">
+                    {{> app-button text='Войти' }}
+                    {{> app-link url='/main/register/register.html' link-text='Нет аккаунта?' }}
+                    {{> app-link url='/index.html' link-text='На главную' }}
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
